@@ -36,7 +36,7 @@ end
 
 disp('MLP Classifier Training Program');
 disp('===============================');
-disp('Training Algorithm: HWO-MOLF with Output Reset.')
+disp('Training Algorithm: OWO-BP.')
 disp('Image Processing and Neural Networks Lab');
 disp('The University of Texas at Arlington');
 disp('Website: http://www-ee.uta.edu/eeweb/ip/');
@@ -52,7 +52,7 @@ if(nargin < 5)
     M = input('Enter the number of output classes (Nc or M): ');
     Nh = input('Enter the number of hidden units (Nh): ');
     Nit = input('Enter the number of training iterations (Nit): ');
-    lambda = input('Enter the value for lambda (lambda): ');
+    lambda = input('Enter the value for lambda (small value like 0 or 0.01) (lambda): ');
 
 end
 

@@ -36,7 +36,7 @@ end
 
 disp('MLP Approximation Training Program');
 disp('==================================');
-disp('Training Algorithm: HWO-MOLF.')
+disp('Training Algorithm: OWO-BP.')
 disp('Image Processing and Neural Networks Lab');
 disp('The University of Texas at Arlington');
 disp('Website: http://www-ee.uta.edu/eeweb/ip/');

@@ -1,0 +1,128 @@
+=================================================
+| Sample training session (Classification case) |
+=================================================
+
+>> mlp_TRAIN_CLASS
+MLP Classifier Training Program
+===============================
+Training Algorithm: HWO-MOLF with Output Reset.
+Image Processing and Neural Networks Lab
+The University of Texas at Arlington
+Website: http://www-ee.uta.edu/eeweb/ip/
+Contact: Dr Michael T. Manry (manry@uta.edu)
+Authors: Jignesh Patel and Rohit Rawat
+ 
+Enter the training file name: data\Gongtrn.dat
+Enter the number of inputs (N): 16
+Enter the number of output classes (Nc or M): 10
+Enter the number of hidden units (Nh): 20
+Enter the number of training iterations (Nit): 30
+Enter the value for lambda (lambda): 0.001
+
+Training file name: data\Gongtrn.dat
+Number of inputs: 16
+Number of output classes: 10
+Number of hidden units: 20
+Number of training iterations: 30
+read_class_file: Nv = 3000
+Number of inputs: 16
+Number of output classes: 10
+Number of hidden units: 20
+Number of training iterations: 30
+Initial OLS complete. MSE = 0.325172
+Fully connected
+It	 sum(z)		 Grad. Energy	 Trg. Err	 Trg. Pe
+1	 0.011000	 2.61e-02	 0.272119	 10.466667	  
+2	 0.012100	 9.33e-03	 0.246941	 10.066667	  
+3	 0.013310	 4.54e-03	 0.230549	 9.833333	  
+4	 0.014641	 2.63e-03	 0.218203	 9.666667	  
+5	 0.016105	 1.50e-03	 0.208029	 9.533333	  
+6	 0.017716	 8.98e-04	 0.199134	 9.500000	  
+7	 0.019487	 6.28e-04	 0.190972	 9.300000	  
+8	 0.021436	 5.49e-04	 0.184502	 8.966667	  
+9	 0.023579	 6.21e-04	 0.179947	 8.833333	  
+10	 0.025937	 1.22e-03	 0.176692	 8.966667	  
+11	 0.028531	 6.46e-04	 0.173515	 8.766667	  
+12	 0.031384	 1.01e-03	 0.170449	 8.700000	  
+13	 0.034523	 6.98e-04	 0.171957	 8.700000	  
+14	 0.017261	 6.98e-04	 0.171274	 8.666667	 1
+15	 0.008631	 6.98e-04	 0.171786	 8.666667	 1
+16	 0.004315	 6.98e-04	 0.172332	 8.733333	 1
+17	 0.002158	 6.98e-04	 0.172682	 8.666667	 1
+18	 0.001079	 6.98e-04	 0.172876	 8.666667	 1
+19	 0.000539	 6.98e-04	 0.172977	 8.700000	 1
+20	 0.000270	 6.98e-04	 0.173029	 8.700000	 1
+21	 0.000135	 6.98e-04	 0.173056	 8.700000	 1
+22	 0.000067	 6.98e-04	 0.173069	 8.700000	 1
+23	 0.000034	 6.98e-04	 0.173076	 8.700000	 1
+24	 0.000017	 6.98e-04	 0.173079	 8.700000	 1
+25	 0.000008	 6.98e-04	 0.173081	 8.700000	 1
+26	 0.000004	 6.98e-04	 0.173081	 8.700000	 1
+27	 0.000002	 6.98e-04	 0.173082	 8.700000	 1
+28	 0.000001	 6.98e-04	 0.173082	 8.700000	 1
+29	 0.000001	 6.98e-04	 0.173082	 8.700000	 1
+30	 0.000000	 6.98e-04	 0.173082	 8.700000	 1
+Training MSE after pruning: 0.173082
+Training Pe after pruning: 8.700000
+Network saved to file weights.txt
+
+ans =
+
+    0.1731
+
+
+================================================
+| Sample testing session (Classification case) |
+================================================
+
+>> mlp_PROCESSING_CLASS
+MLP Classifier Processing Program
+=================================
+Image Processing and Neural Networks Lab
+The University of Texas at Arlington
+Website: http://www-ee.uta.edu/eeweb/ip/
+Contact: Dr Michael T. Manry (manry@uta.edu)
+Authors: Rohit Rawat
+ 
+Enter the weights file name: weights.txt
+Enter the testing data file name: data\Gongtst.tst
+Does the file contain desired outputs? [y/n] y
+MLP Testing
+
+Testing file: data\Gongtst.tst
+
+Weights file: weights.txt
+
+Training filename: data\Gongtrn.dat
+
+Number of inputs (N): 16
+
+Number of outputs (M): 10
+
+Number of hidden units (Nh): 20
+
+
+
+Processing results:
+
+read_class_file: Nv = 3000
+Number of error patterns for class 1: 22
+Number of error patterns for class 2: 6
+Number of error patterns for class 3: 45
+Number of error patterns for class 4: 33
+Number of error patterns for class 5: 56
+Number of error patterns for class 6: 15
+Number of error patterns for class 7: 21
+Number of error patterns for class 8: 19
+Number of error patterns for class 9: 45
+Number of error patterns for class 10: 47
+Total number of error patterns: 309
+Testing Pe (%): 10.3000
+
+
+Processing results have been written to MLP_Processing_Results.txt.
+
+
+ans =
+
+   10.3000

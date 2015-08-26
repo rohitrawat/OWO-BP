@@ -75,6 +75,22 @@ Please run "mlp_PROCESSING.m" or "mlp_PROCESSING_CLASS.m" to obtain processing r
 on new data. If the new data has the correct outputs available, a testing error
 is calculated and displayed. The GUI for the testing program is "run_testing.m".
 
+Included Sample Data
+--------------------
+One data set each of regression and classification types are provided in
+the "data" folder.
+
+Approximation:
+Twod.tra, Twod.tst (testing)
+8 inputs, 7 outputs
+
+Classification:
+Gongtrn.dat, Gongtst.tst (testing)
+16 inputs, 10 output classes
+
+Please see: http://www.uta.edu/faculty/manry/new_training.html for more 
+information on these files.
+
 
 README version 1
 Rohit Rawat 08/26/2015

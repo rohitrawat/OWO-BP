@@ -1,0 +1,153 @@
+================================================
+| Sample training session (Approximation case) |
+================================================
+
+>> mlp_TRAIN
+MLP Approximation Training Program
+==================================
+Training Algorithm: HWO-MOLF.
+Image Processing and Neural Networks Lab
+The University of Texas at Arlington
+Website: http://www-ee.uta.edu/eeweb/ip/
+Contact: Dr Michael T. Manry (manry@uta.edu)
+Authors: Jignesh Patel and Rohit Rawat
+ 
+Enter the training file name: data\Twod.tra
+Enter the number of inputs (N): 8
+Enter the number of outputs (M): 7
+Enter the number of hidden units (Nh): 20
+Enter the number of training iterations (Nit): 50
+Enter the value for lambda (small value like 0 or 0.01) (lambda): 0.001
+
+Training file name: data\Twod.tra
+Number of inputs: 8
+Number of output classes: 7
+Number of hidden units: 20
+Number of training iterations: 50
+Regularization parameter lambda: 1.000000e-03
+# of patterns in data\Twod.tra = 1768
+Number of inputs: 8
+Number of outputs: 7
+Number of hidden units: 20
+Number of training iterations: 50
+Initial OLS complete. MSE = 0.465987
+Fully connected
+It	 sum(z)		 Grad. Energy	 Trg. Err
+1	 0.011000	 1.50e-03	 0.464141	  
+2	 0.012100	 1.02e-03	 0.461272	  
+3	 0.013310	 1.02e-03	 0.460118	  
+4	 0.014641	 9.95e-04	 0.456191	  
+5	 0.016105	 7.33e-04	 0.455618	  
+6	 0.017716	 1.98e-03	 0.451669	  
+7	 0.019487	 9.45e-04	 0.452495	  
+8	 0.009744	 9.45e-04	 0.451197	 1
+9	 0.010718	 8.62e-04	 0.449571	  
+10	 0.011790	 2.84e-03	 0.448476	  
+11	 0.012969	 7.58e-04	 0.451725	  
+12	 0.006484	 7.58e-04	 0.447202	 1
+13	 0.007133	 1.74e-03	 0.446626	  
+14	 0.007846	 9.20e-04	 0.447225	  
+15	 0.003923	 9.20e-04	 0.445551	 1
+16	 0.004315	 4.56e-04	 0.444888	  
+17	 0.004747	 1.33e-03	 0.443789	  
+18	 0.005222	 6.09e-04	 0.443908	  
+19	 0.002611	 6.09e-04	 0.443338	 1
+20	 0.002872	 8.32e-04	 0.442772	  
+21	 0.003159	 8.12e-04	 0.442422	  
+22	 0.003475	 1.09e-03	 0.441811	  
+23	 0.003822	 9.58e-04	 0.441583	  
+24	 0.004205	 1.52e-03	 0.440788	  
+25	 0.004625	 8.68e-04	 0.440887	  
+26	 0.002313	 8.68e-04	 0.440358	 1
+27	 0.002544	 7.40e-04	 0.439925	  
+28	 0.002798	 1.25e-03	 0.439459	  
+29	 0.003078	 7.91e-04	 0.439182	  
+30	 0.003386	 2.28e-03	 0.438497	  
+31	 0.003724	 4.98e-04	 0.438393	  
+32	 0.004097	 5.11e-03	 0.437238	  
+33	 0.004507	 5.86e-04	 0.437909	  
+34	 0.002253	 5.86e-04	 0.436990	 1
+35	 0.002479	 1.66e-03	 0.436444	  
+36	 0.002726	 4.32e-04	 0.436240	  
+37	 0.002999	 2.72e-03	 0.435442	  
+38	 0.003299	 2.95e-04	 0.434340	  
+39	 0.003629	 1.53e-03	 0.434417	  
+40	 0.001814	 1.53e-03	 0.433976	 1
+41	 0.001996	 3.66e-04	 0.433879	  
+42	 0.002196	 2.92e-03	 0.433283	  
+43	 0.002415	 3.29e-04	 0.433247	  
+44	 0.002657	 3.57e-03	 0.432462	  
+45	 0.002922	 5.06e-04	 0.433368	  
+46	 0.001461	 5.06e-04	 0.432380	 1
+47	 0.001607	 1.64e-03	 0.432020	  
+48	 0.001768	 2.56e-04	 0.431535	  
+49	 0.001945	 1.36e-03	 0.431282	  
+50	 0.002139	 7.27e-04	 0.431456	  
+Training MSE after pruning: 0.431456
+Network saved to file weights.txt
+
+ans =
+
+    0.4315
+
+===============================================
+| Sample testing session (Approximation case) |
+===============================================
+
+>> mlp_PROCESSING
+MLP Approximator Processing Program
+===================================
+Image Processing and Neural Networks Lab
+The University of Texas at Arlington
+Website: http://www-ee.uta.edu/eeweb/ip/
+Contact: Dr Michael T. Manry (manry@uta.edu)
+Authors: Rohit Rawat
+ 
+Enter the weights file name: weights.txt
+Enter the testing data file name: data\Twod.tst
+Does the file contain desired outputs? [y/n] y
+MLP Testing
+
+Testing file: data\Twod.tst
+
+Weights file: weights.txt
+
+Training filename: data\Twod.tra
+
+Number of inputs (N): 8
+
+Number of outputs (M): 7
+
+Number of hidden units (Nh): 20
+
+
+
+Processing results:
+
+# of patterns in data\Twod.tst = 1000
+Error at node 1 = 0.013459
+
+Error at node 2 = 0.000190
+
+Error at node 3 = 0.342864
+
+Error at node 4 = 0.000131
+
+Error at node 5 = 0.052785
+
+Error at node 6 = 0.033644
+
+Error at node 7 = 0.000001
+
+Total Testing MSE = 0.443073
+
+MSE/M as shown by MATLAB = 0.063296
+
+
+
+Processing results have been written to MLP_Processing_Results.txt.
+
+
+ans =
+
+    0.4431

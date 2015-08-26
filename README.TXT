@@ -6,8 +6,8 @@ The University of Texas at Arlington.
 http://www.uta.edu/faculty/manry/
 
 This program trains a multi-layer perceptron with one hidden layer.
-Please see http://www.uta.edu/faculty/manry/ for implementation of more
-advanced MLP training algorithms.
+Please see http://www.uta.edu/faculty/manry/new_software.html for 
+implementations of more advanced MLP training algorithms.
 
 Approximation case
 ------------------

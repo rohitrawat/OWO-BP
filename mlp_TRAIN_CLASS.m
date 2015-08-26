@@ -41,7 +41,7 @@ disp('Image Processing and Neural Networks Lab');
 disp('The University of Texas at Arlington');
 disp('Website: http://www-ee.uta.edu/eeweb/ip/');
 disp('Contact: Dr Michael T. Manry (manry@uta.edu)');
-disp('Authors: Jignesh Patel and Rohit Rawat');
+disp('Authors: Rohit Rawat');
 disp(' ');
 
 if(nargin < 5)
@@ -68,7 +68,7 @@ fprintf('Number of inputs: %d\n', N);
 fprintf('Number of output classes: %d\n', M);
 fprintf('Number of hidden units: %d\n', Nh);
 fprintf('Number of training iterations: %d\n', Nit);
-
+fprintf('Regularization parameter lambda: %d\n', lambda);
 
 global global_debug;
 global_debug = 0;

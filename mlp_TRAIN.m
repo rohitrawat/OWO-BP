@@ -41,7 +41,7 @@ disp('Image Processing and Neural Networks Lab');
 disp('The University of Texas at Arlington');
 disp('Website: http://www-ee.uta.edu/eeweb/ip/');
 disp('Contact: Dr Michael T. Manry (manry@uta.edu)');
-disp('Authors: Jignesh Patel and Rohit Rawat');
+disp('Authors: Rohit Rawat');
 disp(' ');
 
 if(nargin < 5)

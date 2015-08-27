@@ -53,6 +53,8 @@ Configure all the parameters in the GUI and press the "Train" button.
 The program outputs can be seen in the MATLAB console. The network weights are 
 stored in the file weights.txt.
 
+![Screenshot](owo_bp.png)
+
 Running the console version
 ---------------------------
 The console version of the program is provided in the hwo_molf_pruning folder.
